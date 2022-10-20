@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/representativeColor"
+    tools:context=".login.LoginActivity" >
+
+    <!-- 앱 타이틀 -->
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_weight="0.35"
+        app:layout_constraintBottom_toTopOf="@+id/login_layout1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/login_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintVertical_weight="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/login_title"
+        app:layout_constraintBottom_toTopOf="@+id/login_layout2">
+
+        <!-- 이메일 -->
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/white"
+            android:lines="1"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_goneMarginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/login_title"
+            app:layout_constraintBottom_toTopOf="@+id/login_warningEmail" />
+
+        <!-- 이메일 경고 -->
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/login_warningEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/warningEmail"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/login_email"
+            app:layout_constraintBottom_toTopOf="@+id/login_password" />
+
+        <!-- 비밀번호 -->
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/white"
+            android:lines="1"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/login_warningEmail"
+            app:layout_constraintBottom_toTopOf="@+id/login_warningPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- 비밀번호 경고 -->
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/login_warningPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/warningPassword"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/login_password"
+            app:layout_constraintBottom_toTopOf="@+id/login_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintVertical_weight="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/login_layout1"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <!-- 로그인 -->
+        <Button
+            android:id="@+id/login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:background="@drawable/border_button_blue"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/login_warningPassword"
+            app:layout_constraintBottom_toTopOf="@+id/login_layout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/login_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/login_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:text="@string/NotMember" />
+
+            <!-- 회원가입 -->
+            <TextView
+                android:id="@+id/login_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:text="@string/signIn"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

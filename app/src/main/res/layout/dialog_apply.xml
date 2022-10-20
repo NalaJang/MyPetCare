@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomNavigation.home.schedule.view.ApplyDialog" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 닫기 -->
+        <Button
+            android:id="@+id/apply_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/close"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/apply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintBaseline_toBaselineOf="@+id/apply_close"
+            app:layout_constraintStart_toEndOf="@+id/apply_close"
+            app:layout_constraintEnd_toStartOf="@+id/apply_complete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/apply_line1" />
+
+        <!-- 완료 -->
+        <Button
+            android:id="@+id/apply_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/complete"
+            android:textStyle="bold"
+            android:textColor="@drawable/text_effect"
+            android:background="@drawable/button_effect_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/apply_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/darkGray"
+            app:layout_constraintTop_toBottomOf="@+id/apply_close"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <!-- 서비스 유형 -->
+        <TextView
+            android:id="@+id/apply_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/serviceCategory"
+            app:layout_constraintTop_toBottomOf="@+id/apply_line1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <CheckBox
+            android:id="@+id/apply_walk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/walk"
+            app:layout_constraintTop_toBottomOf="@+id/apply_category" />
+
+        <CheckBox
+            android:id="@+id/apply_bath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/bath"
+            app:layout_constraintTop_toBottomOf="@+id/apply_walk" />
+
+        <CheckBox
+            android:id="@+id/apply_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/visit"
+            app:layout_constraintTop_toBottomOf="@+id/apply_bath" />
+
+        <View
+            android:id="@+id/apply_line2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/line"
+            app:layout_constraintTop_toBottomOf="@+id/apply_visit"/>
+
+        <!-- 시간 -->
+        <TextView
+            android:id="@+id/apply_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/time"
+            app:layout_constraintTop_toBottomOf="@+id/apply_line2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/start"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/apply_time"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- 시작 시간 -->
+        <TextView
+            android:id="@+id/apply_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/defaultStartTime"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/apply_time"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/end"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/apply_startTime"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- 종료 시간 -->
+        <TextView
+            android:id="@+id/apply_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/defaultEndTime"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/apply_startTime"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/apply_line4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/line"
+            app:layout_constraintTop_toBottomOf="@+id/apply_endTime" />
+
+        <!-- 요청 사항 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/apply_line4"
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/request" />
+
+            <EditText
+                android:id="@+id/apply_request"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

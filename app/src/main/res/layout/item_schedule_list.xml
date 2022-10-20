@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <!-- 시작 시간 -->
+            <TextView
+                android:id="@+id/scheduleList_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="오전 10:00 부터"
+                android:textColor="@color/black"  />
+
+            <!-- 종료 시간 -->
+            <TextView
+                android:id="@+id/scheduleList_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="오전 10:00 까지"
+                android:textColor="@color/black"  />
+        </LinearLayout>
+
+        <!-- 서비스 유형 -->
+        <TextView
+            android:id="@+id/scheduleList_selectedCategory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            tools:text="방문, 산책"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

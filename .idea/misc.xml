@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/border.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/border_bottom_stroke.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border_button.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/border_button_black.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border_button_blue.xml" value="0.1155" />
+        <entry key="app/src/main/res/drawable/border_text.xml" value="0.2395" />
+        <entry key="app/src/main/res/drawable/border_text_yellow.xml" value="0.182" />
+        <entry key="app/src/main/res/drawable/bottom_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bottom_menu_color.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/bottom_menu_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_effect.xml" value="0.1185" />
+        <entry key="app/src/main/res/drawable/button_effect_blue.xml" value="0.1185" />
+        <entry key="app/src/main/res/drawable/button_effect_gray.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_effect_gray2.xml" value="0.1185" />
+        <entry key="app/src/main/res/drawable/button_ripple.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/dialog_apply.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/dialog_full_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/text_effect.xml" value="0.1185" />
+        <entry key="app/src/main/res/layout/activity_bottom_navigation.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_chat2.xml" value="0.231722958529286" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login2.xml" value="0.15848007414272475" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/address_api.xml" value="0.13160333642261354" />
+        <entry key="app/src/main/res/layout/content_schedule_check_dialog.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_apply.xml" value="0.2180232558139535" />
+        <entry key="app/src/main/res/layout/dialog_calendar.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_manager_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_my_profile.xml" value="0.231722958529286" />
+        <entry key="app/src/main/res/layout/dialog_my_review.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/dialog_schedule_check.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_sign_in.xml" value="0.22878851836217814" />
+        <entry key="app/src/main/res/layout/dialog_sign_up.xml" value="0.17238183503243745" />
+        <entry key="app/src/main/res/layout/fragment_c.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.231722958529286" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.2682291666666667" />
+        <entry key="app/src/main/res/layout/fragment_chat2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.11244121419410004" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_room_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_chatting.xml" value="0.13636363636363635" />
+        <entry key="app/src/main/res/layout/item_manager_review_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_my_review_list.xml" value="0.20111214087117701" />
+        <entry key="app/src/main/res/layout/item_room_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_schedule_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/manager_review_list.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/message_box.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/my_message_box.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/web_view.xml" value="0.231722958529286" />
+        <entry key="app/src/main/res/layout/your_message_box.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/xml/filepaths.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

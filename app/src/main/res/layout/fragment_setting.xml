@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".bottomNavigation.setting.view.SettingFragment">
+
+    <LinearLayout
+        android:id="@+id/setting_titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_bottom_stroke"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            android:text="@string/setting" />
+
+    </LinearLayout>
+
+    <!-- 프로필 -->
+    <Button
+        android:id="@+id/setting_myProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/profile"
+        android:background="@drawable/border_button_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/setting_titleLayout" />
+
+    <!-- 작성한 후기 -->
+    <Button
+        android:id="@+id/setting_myReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/review"
+        android:background="@drawable/border_button_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/setting_myProfile" />
+
+    <!-- 로그아웃 -->
+    <Button
+        android:id="@+id/setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:background="@drawable/border_button_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/setting_myReview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

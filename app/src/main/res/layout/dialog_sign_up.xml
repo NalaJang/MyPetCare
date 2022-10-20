@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".signUp.SignUpDialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <!-- 닫기 -->
+        <Button
+            android:id="@+id/signIn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/signIn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/signIn_line1" />
+
+        <View
+            android:id="@+id/signIn_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkGray"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_close"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 이메일 -->
+        <EditText
+            android:id="@+id/signIn_myEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:hint="@string/signInMyEmail"
+            android:background="@drawable/border_text"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_line1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 비밀번호 -->
+        <EditText
+            android:id="@+id/signIn_myPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:hint="@string/signInMyPassword"
+            android:inputType="textPassword"
+            android:background="@drawable/border_text"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 이름 -->
+        <EditText
+            android:id="@+id/signIn_myName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:hint="@string/myName"
+            android:background="@drawable/border_text"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 휴대폰번호 -->
+        <EditText
+            android:id="@+id/signIn_myPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:hint="@string/signInMyPhoneNum"
+            android:background="@drawable/border_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myName" />
+
+        <!-- myPet 이름 -->
+        <EditText
+            android:id="@+id/signIn_myPetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:hint="@string/myPetName"
+            android:background="@drawable/border_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPhoneNum" />
+
+        <!-- myPet 나이 -->
+        <EditText
+            android:id="@+id/signIn_myPetAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:hint="@string/signInMyPetAge"
+            android:background="@drawable/border_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPetName" />
+
+        <!-- myPet 품종 -->
+        <EditText
+            android:id="@+id/signIn_myPetSpecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:hint="@string/signInMyPetSpecies"
+            android:background="@drawable/border_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPetAge" />
+
+        <!-- myPet 몸무게 -->
+        <EditText
+            android:id="@+id/signIn_myPetWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:hint="@string/myPetWeight"
+            android:background="@drawable/border_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPetSpecies" />
+
+        <!-- myPet 소개 -->
+        <EditText
+            android:id="@+id/signIn_myPetCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:hint="@string/signInMyPetCharacter"
+            android:background="@drawable/border_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPetWeight" />
+
+        <!-- 가입 -->
+        <Button
+            android:id="@+id/signIn_signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:enabled="false"
+            android:text="@string/signIn"
+            android:textStyle="bold"
+            android:textColor="@drawable/text_effect"
+            android:background="@drawable/button_effect_blue"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_myPetCharacter"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
